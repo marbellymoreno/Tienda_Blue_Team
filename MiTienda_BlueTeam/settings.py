@@ -27,6 +27,7 @@ SECRET_KEY = 'django-insecure-$)s-!5m!4rxjvr7x3&l5n+e1^d-t(po(p%&j2(4l!s3r0=+4w*
 DEBUG = True
 
 ALLOWED_HOSTS = []
+MESSAGE_STORAGE = "django.contrib.messages.storage.cookie.CookieStorage"
 
 
 # Application definition
@@ -80,9 +81,9 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'mitiendadb',
         'USER': 'root',
-        'PASSWORD': 'qwerty123',
+        'PASSWORD': '0000',
         'HOST': 'localhost',
-        'PORT': '3306',
+        'PORT': '3308',
     }
 }
 

@@ -1,6 +1,7 @@
 from django.shortcuts import redirect, render
 from .models import Producto
 from .forms import ProductoForm
+from django.contrib import messages
 
 # Create your views here.
 
@@ -16,6 +17,7 @@ def crear_producto(request):
 
     if formulario.is_valid():
         formulario.save()
+        messages.success(request,"Producto creado con exito.")
         return redirect('productos')        
 
     return render(request, 'producto/crear.html', {'formulario': formulario})
