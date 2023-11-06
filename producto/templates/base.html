@@ -16,7 +16,7 @@
         <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
             <a class="navbar-brand" href="">
                 <img src="{% static 'img/Logo.PNG' %}" alt="Logo" width="30" height="30"
-                    class="d-inline-block align-top"> Michelle's Bakery
+                    class="d-inline-block align-top"> Michelle's Bakery 
             </a>
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -26,11 +26,11 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
+                        <li class="navbar-brand active">
                             <a class="nav-link active" aria-current="page" href="{% url 'inicio' %}">Inicio</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{% url 'productos' %}">Producto</a>
+                        <li class="navbar-brand active">
+                            <a class="nav-link active" href="{% url 'productos' %}">Producto</a>
                         </li>
                     </ul>
                     <form class="d-flex" role="search">
