@@ -28,6 +28,7 @@ def editar_producto(request, id):
     formulario = ProductoForm(request.POST or None, instance = producto)
     if formulario.is_valid():
         formulario.save()
+        messages.success(request,"Producto actualizado con exito.")
         return redirect('productos') 
     
     return render(request, 'producto/editar.html', {'formulario': formulario})
